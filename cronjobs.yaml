@@ -1,0 +1,5 @@
+- name: undo.requests
+  schedule: "0 */5 * * *"
+  command: php ${HOME}/ArzBot/src/RunTask UndoRequests
+  image: php8.2
+  emails: onfailure
